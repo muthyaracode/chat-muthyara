@@ -104,12 +104,12 @@ export default function AdminDashboard() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-1.5 rounded-lg">
-              <i className="fas fa-robot text-white text-sm" />
+            <div className="bg-gradient-to-br from-pink-500 to-rose-600 p-1.5 rounded-lg">
+              <i className="fas fa-sparkles text-white text-sm" />
             </div>
             <div>
-              <span className="font-bold text-white text-sm">Sontoloyo AI</span>
-              <span className="text-xs text-blue-400 ml-2">Admin Dashboard</span>
+              <span className="font-bold text-white text-sm">Muthyara AI Asisten</span>
+              <span className="text-xs text-pink-300 ml-2">Admin Dashboard</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -145,9 +145,9 @@ export default function AdminDashboard() {
               {pagination ? `${pagination.page}/${pagination.totalPages}` : '—'}
             </p>
           </div>
-          <div className="col-span-2 md:col-span-1 bg-blue-900/30 border border-blue-700/30 rounded-xl p-4">
-            <p className="text-xs text-blue-300 mb-1">Status</p>
-            <p className="text-sm font-semibold text-blue-200 flex items-center gap-2">
+          <div className="col-span-2 md:col-span-1 bg-pink-900/20 border border-pink-700/30 rounded-xl p-4">
+            <p className="text-xs text-pink-300 mb-1">Status</p>
+            <p className="text-sm font-semibold text-pink-100 flex items-center gap-2">
               <i className="fas fa-circle text-emerald-400 text-xs" />
               Database Terhubung
             </p>
@@ -163,12 +163,12 @@ export default function AdminDashboard() {
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               placeholder="Cari pesan pengguna atau AI..."
-              className="w-full bg-slate-800 border border-slate-700 rounded-lg pl-9 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              className="w-full bg-slate-800 border border-slate-700 rounded-lg pl-9 pr-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-pink-400 focus:ring-1 focus:ring-pink-400"
             />
           </div>
           <button
             type="submit"
-            className="px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-sm rounded-lg transition-colors"
+            className="px-4 py-2.5 bg-pink-600 hover:bg-pink-500 text-white text-sm rounded-lg transition-colors"
           >
             Cari
           </button>
@@ -340,7 +340,7 @@ export default function AdminDashboard() {
                   <div className="w-6 h-6 bg-blue-700 rounded-full flex items-center justify-center">
                     <i className="fas fa-robot text-xs text-white" />
                   </div>
-                  <span className="text-xs font-medium text-blue-300">Sontoloyo AI</span>
+                  <span className="text-xs font-medium text-pink-300">Muthyara AI Asisten</span>
                 </div>
                 <div className="bg-blue-950/40 border border-blue-900/30 rounded-xl p-4">
                   <p className="text-sm text-slate-200 leading-relaxed whitespace-pre-wrap">

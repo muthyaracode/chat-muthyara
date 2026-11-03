@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Admin Bisnis Digital</title>
+    <title>Muthyara AI Asisten</title>
+    <link rel="icon" href="/icons/muthyara-ai.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -22,28 +23,28 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0f172a',
+                        primary: '#db2777',
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-rose-50 text-rose-950 dark:bg-[#211720] dark:text-rose-50 transition-colors duration-300">
 
-    <nav class="border-b border-gray-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-10">
+    <nav class="border-b border-rose-200 dark:border-rose-100/10 bg-white/90 dark:bg-[#2b1d28]/90 backdrop-blur-md sticky top-0 z-10">
         <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="bg-blue-600 p-2 rounded-lg text-white">
-                    <i class="fas fa-robot text-xl"></i>
+                <div class="bg-gradient-to-br from-pink-500 to-rose-600 p-2 rounded-lg text-white">
+                    <i class="fas fa-sparkles text-xl"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-lg leading-none">Admin AI</h1>
-                    <p class="text-xs text-gray-500 dark:text-gray-400">Bisnis Digital Knowledge Base</p>
+                    <h1 class="font-bold text-lg leading-none">Muthyara AI Asisten</h1>
+                    <p class="text-xs text-rose-700/70 dark:text-rose-100/60">Teman ngobrol cerdas</p>
                 </div>
             </div>
             
-            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-slate-800 transition-all">
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-rose-100 dark:hover:bg-rose-100/10 transition-all">
                 <i id="theme-icon" class="fas fa-moon text-lg"></i>
             </button>
         </div>
@@ -53,10 +54,10 @@
         <div id="chat-window" class="chat-container overflow-y-auto space-y-6 pr-2">
             
             <div class="flex gap-4 mb-8">
-                <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white shrink-0">
-                    <i class="fas fa-robot text-xs"></i>
+                <div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center text-white shrink-0">
+                    <i class="fas fa-sparkles text-xs"></i>
                 </div>
-                <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 dark:border-slate-700 max-w-[80%]">
+                <div class="bg-white dark:bg-[#30222d] p-4 rounded-2xl rounded-tl-none shadow-sm border border-rose-100 dark:border-rose-100/10 max-w-[80%]">
                     <p class="text-sm leading-relaxed">
                         Halo Admin! Saya asisten AI untuk Prodi Bisnis Digital. Anda bisa bertanya tentang SOP, kurikulum, atau buku pedoman akademik. Ada yang bisa saya bantu?
                     </p>
@@ -66,12 +67,12 @@
         </div>
     </main>
 
-    <footer class="fixed bottom-0 w-full bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 p-4">
+    <footer class="fixed bottom-0 w-full bg-white dark:bg-[#2b1d28] border-t border-rose-200 dark:border-rose-100/10 p-4">
         <div class="max-w-5xl mx-auto">
             <div class="relative flex items-center">
                 <input type="text" id="user-input" placeholder="Tanyakan sesuatu tentang SOP..." 
-                    class="w-full p-4 pr-12 rounded-xl border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 transition-all">
-                <button id="send-btn" class="absolute right-3 p-2 text-blue-600 hover:text-blue-700 dark:text-blue-400">
+                    class="w-full p-4 pr-12 rounded-xl border border-rose-200 dark:border-rose-100/10 bg-rose-50 dark:bg-[#30222d] focus:outline-none focus:ring-2 focus:ring-pink-400 transition-all">
+                <button id="send-btn" class="absolute right-3 p-2 text-pink-600 hover:text-pink-700 dark:text-pink-300">
                     <i class="fas fa-paper-plane text-xl"></i>
                 </button>
             </div>
@@ -114,10 +115,10 @@
             msgDiv.className = `flex gap-4 ${isUser ? 'flex-row-reverse' : ''}`;
             
             msgDiv.innerHTML = `
-                <div class="w-8 h-8 rounded-full ${isUser ? 'bg-slate-700' : 'bg-blue-600'} flex items-center justify-center text-white shrink-0">
-                    <i class="fas ${isUser ? 'fa-user' : 'fa-robot'} text-xs"></i>
+                <div class="w-8 h-8 rounded-full ${isUser ? 'bg-rose-900' : 'bg-pink-500'} flex items-center justify-center text-white shrink-0">
+                    <i class="fas ${isUser ? 'fa-user' : 'fa-sparkles'} text-xs"></i>
                 </div>
-                <div class="${isUser ? 'bg-blue-600 text-white' : 'bg-white dark:bg-slate-800'} p-4 rounded-2xl ${isUser ? 'rounded-tr-none' : 'rounded-tl-none'} shadow-sm border ${isUser ? 'border-blue-500' : 'border-gray-100 dark:border-slate-700'} max-w-[80%]">
+                <div class="${isUser ? 'bg-pink-600 text-white' : 'bg-white dark:bg-[#30222d]'} p-4 rounded-2xl ${isUser ? 'rounded-tr-none' : 'rounded-tl-none'} shadow-sm border ${isUser ? 'border-pink-500' : 'border-rose-100 dark:border-rose-100/10'} max-w-[80%]">
                     <p class="text-sm leading-relaxed">${text}</p>
                 </div>
             `;
